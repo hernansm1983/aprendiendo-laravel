@@ -1,0 +1,3 @@
+<?=$titulo?>
+<br/>
+<?=$listado[1]?>

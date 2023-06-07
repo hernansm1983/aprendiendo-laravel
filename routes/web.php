@@ -35,3 +35,21 @@ Route::get('/pelicula/{titulo}/{year?}', function($titulo = 'No hay una pelicula
     'titulo' => '[a-zA-Z]+',
     'year' => '[0-9]+'
 ));
+
+//--- 2 formas distintas de generar rutas ---
+//--- A ---
+Route::get('/listado-peliculas-1', function(){
+    $titulo = "Listado de Peliculas 1";
+    return view('peliculas.listado', array(
+        'titulo' => $titulo
+    ));
+});
+
+//---B---
+Route::get('/listado-peliculas-2', function(){
+    $titulo = "Listado de Peliculas 2";
+    $listado = array('batman', 'robin', 'guason');
+    return view('peliculas.listado')
+        ->with('titulo', $titulo)
+        ->with('listado', $listado);
+});
