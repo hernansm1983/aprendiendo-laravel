@@ -17,7 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/peliculas/{pagina?}', '\App\Http\Controllers\PeliculaController@index');
 
+Route::get('/detalle', '\App\Http\Controllers\PeliculaController@detalle');
+
+Route::resource('/usuario', '\App\Http\Controllers\UsuarioController');
+
+/*
 Route::get('/mostrar-fecha', function(){
    $titulo = "Estoy mostrando la fecha";
    return view('mostrar-fecha', array(
@@ -59,3 +65,4 @@ Route::get('/listado-peliculas-2', function(){
 Route::get('/pagina-generica', function(){
     return view('pagina');
 });
+*/
