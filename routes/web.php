@@ -17,9 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/peliculas/{pagina?}', '\App\Http\Controllers\PeliculaController@index');
+Route::get('/peliculas/{pagina?}', [
+    'uses' => '\App\Http\Controllers\PeliculaController@index',
+    'as' => 'pelicula.index'
+]);
 
-Route::get('/detalle', '\App\Http\Controllers\PeliculaController@detalle');
+Route::get('/detalle', [
+    'uses' => '\App\Http\Controllers\PeliculaController@detalle',
+    'as' => 'pelicula.detalle'
+]);
 
 Route::resource('/usuario', '\App\Http\Controllers\UsuarioController');
 

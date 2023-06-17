@@ -349,8 +349,8 @@ class ComposerStaticInitc7ea34510d85e188b5ed0d797db9746e
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -515,6 +515,8 @@ class ComposerStaticInitc7ea34510d85e188b5ed0d797db9746e
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\PeliculaController' => __DIR__ . '/../..' . '/app/Http/Controllers/PeliculaController.php',
+        'App\\Http\\Controllers\\UsuarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsuarioController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -3969,7 +3971,10 @@ class ComposerStaticInitc7ea34510d85e188b5ed0d797db9746e
         'PHPUnit\\Metadata\\Version\\ConstraintRequirement' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/Version/ConstraintRequirement.php',
         'PHPUnit\\Metadata\\Version\\Requirement' => __DIR__ . '/..' . '/phpunit/phpunit/src/Metadata/Version/Requirement.php',
         'PHPUnit\\Runner\\ClassCannotBeFoundException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php',
+        'PHPUnit\\Runner\\ClassCannotBeInstantiatedException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ClassCannotBeInstantiatedException.php',
+        'PHPUnit\\Runner\\ClassDoesNotExistException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExistException.php',
         'PHPUnit\\Runner\\ClassDoesNotExtendTestCaseException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExtendTestCaseException.php',
+        'PHPUnit\\Runner\\ClassDoesNotImplementExtensionInterfaceException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ClassDoesNotImplementExtensionInterfaceException.php',
         'PHPUnit\\Runner\\ClassIsAbstractException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php',
         'PHPUnit\\Runner\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/CodeCoverage.php',
         'PHPUnit\\Runner\\DirectoryCannotBeCreatedException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/DirectoryCannotBeCreatedException.php',
@@ -3989,6 +3994,7 @@ class ComposerStaticInitc7ea34510d85e188b5ed0d797db9746e
         'PHPUnit\\Runner\\InvalidOrderException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php',
         'PHPUnit\\Runner\\InvalidPhptFileException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php',
         'PHPUnit\\Runner\\NoIgnoredEventException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/NoIgnoredEventException.php',
+        'PHPUnit\\Runner\\NoTestCaseObjectOnCallStackException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/NoTestCaseObjectOnCallStackException.php',
         'PHPUnit\\Runner\\ParameterDoesNotExistException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php',
         'PHPUnit\\Runner\\PhptExternalFileCannotBeLoadedException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php',
         'PHPUnit\\Runner\\PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/PhptTestCase.php',
@@ -4222,6 +4228,7 @@ class ComposerStaticInitc7ea34510d85e188b5ed0d797db9746e
         'PHPUnit\\TextUI\\XmlConfiguration\\SchemaDetector' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/SchemaDetector/SchemaDetector.php',
         'PHPUnit\\TextUI\\XmlConfiguration\\SchemaFinder' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/SchemaFinder.php',
         'PHPUnit\\TextUI\\XmlConfiguration\\SnapshotNodeList' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/SnapshotNodeList.php',
+        'PHPUnit\\TextUI\\XmlConfiguration\\Source' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/Source.php',
         'PHPUnit\\TextUI\\XmlConfiguration\\SuccessfulSchemaDetectionResult' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/SchemaDetector/SuccessfulSchemaDetectionResult.php',
         'PHPUnit\\TextUI\\XmlConfiguration\\TestSuiteMapper' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/TestSuiteMapper.php',
         'PHPUnit\\TextUI\\XmlConfiguration\\UpdateSchemaLocation' => __DIR__ . '/..' . '/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/UpdateSchemaLocation.php',

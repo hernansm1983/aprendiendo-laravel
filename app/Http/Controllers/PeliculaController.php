@@ -17,6 +17,6 @@ class PeliculaController extends Controller
     
     
     public function detalle(){
-        echo "<h1>Detalle de la pelicula</h1>";
+        return view('pelicula.detalle');
     }
 }
