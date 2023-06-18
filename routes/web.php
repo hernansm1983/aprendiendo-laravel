@@ -1,7 +1,8 @@
 <?php
-
+use App\Http\Controllers\PeliculaController;
+use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
-
+$namespace = 'App\Http\Controllers';
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,17 +18,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/peliculas/{pagina?}', [PeliculaController::class, 'index', 'as' => 'pelicula.index']);
+/*
 Route::get('/peliculas/{pagina?}', [
-    'uses' => '\App\Http\Controllers\PeliculaController@index',
+    'uses' => 'PeliculaController@index',
     'as' => 'pelicula.index'
 ]);
-
+*/
 Route::get('/detalle', [
     'uses' => '\App\Http\Controllers\PeliculaController@detalle',
     'as' => 'pelicula.detalle'
 ]);
 
-Route::resource('/usuario', '\App\Http\Controllers\UsuarioController');
+Route::resource('/usuario', $namespace.'\UsuarioController');
 
 /*
 Route::get('/mostrar-fecha', function(){
