@@ -1,6 +1,6 @@
 <?php
 use App\Http\Controllers\PeliculaController;
-use App\Http\Controllers\UsuarioController;
+
 use Illuminate\Support\Facades\Route;
 $namespace = 'App\Http\Controllers';
 /*
@@ -18,19 +18,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/peliculas/{pagina?}', [PeliculaController::class, 'index', 'as' => 'pelicula.index']);
+Route::get('/peliculas/{pagina?}', [PeliculaController::class, 'index'])->name('pelicula.index');
 /*
 Route::get('/peliculas/{pagina?}', [
     'uses' => 'PeliculaController@index',
     'as' => 'pelicula.index'
 ]);
 */
-Route::get('/detalle', [
+Route::get('/detalle/{year?}', [
+    'middleware' => 'testyear',
     'uses' => '\App\Http\Controllers\PeliculaController@detalle',
     'as' => 'pelicula.detalle'
 ]);
 
 Route::resource('/usuario', $namespace.'\UsuarioController');
+
+Route::get('/redirigir', [PeliculaController::class, 'redirigir']);
+
+
+Route::get('/formulario', [PeliculaController::class, 'formulario']);
+Route::post('/recibir', [PeliculaController::class, 'recibir']);
 
 /*
 Route::get('/mostrar-fecha', function(){

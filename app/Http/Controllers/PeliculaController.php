@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 class PeliculaController extends Controller
@@ -16,7 +14,26 @@ class PeliculaController extends Controller
     }
     
     
-    public function detalle(){
+    public function detalle($year = null){
         return view('pelicula.detalle');
+    }
+    
+    
+    public function redirigir(){
+        return redirect()->action('App\Http\Controllers\PeliculaController@detalle');
+        //return redirect()->route('pelicula.detalle');
+    }
+    
+    
+    public function formulario(){
+        return view('pelicula.formulario');
+    }
+    
+    
+    public function recibir(Request $request){
+        $nombre = $request->input('nombre');
+        $email = $request->input('email');
+        
+        return "El nombre es: $nombre y el E-mail es: $email";
     }
 }
