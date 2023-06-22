@@ -1,6 +1,6 @@
 <?php
 use App\Http\Controllers\PeliculaController;
-
+use App\Http\Controllers\FrutasController;
 use Illuminate\Support\Facades\Route;
 $namespace = 'App\Http\Controllers';
 /*
@@ -38,6 +38,11 @@ Route::get('/redirigir', [PeliculaController::class, 'redirigir']);
 
 Route::get('/formulario', [PeliculaController::class, 'formulario']);
 Route::post('/recibir', [PeliculaController::class, 'recibir']);
+
+Route::group(['prefix'=>'frutas'], function(){
+    Route::get('/', [FrutasController::class, 'index']);  
+    Route::get('detail/{id}', [FrutasController::class, 'detail']);  
+});
 
 /*
 Route::get('/mostrar-fecha', function(){

@@ -7,11 +7,17 @@
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/pelicula/index.blade.php</file>
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/app/Http/Controllers/UsuarioController.php</file>
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/pagina.blade.php</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/config/database.php</file>
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/app/Http/Controllers/PeliculaController.php</file>
-            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/.htaccess</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/app/Http/Kernel.php</file>
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/routes/web.php</file>
-            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/welcome.blade.php</file>
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/layout/master.blade.php</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/.env</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/pelicula/detalle.blade.php</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/app/Http/Middleware/TestYear.php</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/.htaccess</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/welcome.blade.php</file>
+            <file>file:/opt/lampp/htdocs/aprendiendo-laravel/resources/views/pelicula/formulario.blade.php</file>
             <file>file:/opt/lampp/htdocs/aprendiendo-laravel/public/index.php</file>
         </group>
     </open-files>
