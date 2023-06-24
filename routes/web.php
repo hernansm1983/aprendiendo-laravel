@@ -42,6 +42,11 @@ Route::post('/recibir', [PeliculaController::class, 'recibir']);
 Route::group(['prefix'=>'frutas'], function(){
     Route::get('/', [FrutasController::class, 'index']);  
     Route::get('detail/{id}', [FrutasController::class, 'detail']);  
+    Route::get('crear', [FrutasController::class, 'create']);
+    Route::post('save', [FrutasController::class, 'save']);
+    Route::get('borrar/{id}', [FrutasController::class, 'delete']);
+    Route::get('actualizar/{id}', [FrutasController::class, 'edit']);
+    Route::post('update/{id}', [FrutasController::class, 'update']);
 });
 
 /*
