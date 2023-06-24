@@ -4,7 +4,8 @@
     <h1>Alta de Frutas</h1>
 @endif
 
-<form action="{{isset($fruta) ? action('\App\Http\Controllers\FrutasController@update', ['id'=>$fruta->id]) : action('\App\Http\Controllers\FrutasController@save')}}" method="post">
+<form action="{{isset($fruta) ? action('\App\Http\Controllers\FrutasController@update', ['id'=>$fruta->id]) : 
+                                action('\App\Http\Controllers\FrutasController@save')}}" method="post">
     {{csrf_field()}}
     <label for="nombre">Nombre:</label> 
     <input type="text" name="nombre" value="{{ isset($fruta->nombre) ? $fruta->nombre : '' }}" />

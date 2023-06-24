@@ -66,8 +66,8 @@ class FrutasController extends Controller
     }
     
     
-    public function update(Request $request){
-        $fruta = DB::table('frutas')->where('id', '=', $request->id)->update(array(
+    public function update($id, Request $request){
+        $fruta = DB::table('frutas')->where('id', '=', $id)->update(array(
             'nombre' => $request->input('nombre'),
             'descripcion' => $request->input('descripcion'),
             'precio' => $request->input('precio')
